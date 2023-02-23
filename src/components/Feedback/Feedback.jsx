@@ -42,7 +42,7 @@ export default function Feedback({
             <p>Total: {totalFeedback}</p>
           </li>
           <li>
-            <p>Positive feedback: {percentage}</p>
+            <p>Positive feedback: {percentage}%</p>
           </li>
         </ul>
       </div>
