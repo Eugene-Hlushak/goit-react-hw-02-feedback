@@ -1,6 +1,3 @@
-// import PropTypes from 'prop-types';
-import Statistics from 'components/Statistics';
-
 export default function Feedback({
   addGood,
   addNeutral,
