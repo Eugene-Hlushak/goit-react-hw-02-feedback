@@ -11,9 +11,6 @@ export class App extends Component {
     bad: 0,
   };
 
-  getPercentage = () =>
-    this.setState({ percentage: this.state.good / this.state.total });
-
   addFeedback = evt =>
     this.setState(prevState => {
       const { textContent } = evt.target;

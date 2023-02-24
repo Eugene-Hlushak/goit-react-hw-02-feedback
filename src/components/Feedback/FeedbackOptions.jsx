@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
@@ -8,21 +8,11 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
           <button onClick={onLeaveFeedback}>{option}</button>
         </li>
       ))}
-      {/* <li>
-        <button onClick={addGood}>Good</button>
-      </li>
-      <li>
-        <button onClick={addNeutral}>Neutral</button>
-      </li>
-      <li>
-        <button onClick={addBad}>Bad</button>
-      </li> */}
     </ul>
   );
 }
 
-// FeedbackOptions.propTypes = {
-//   addGood: PropTypes.func.isRequired,
-//   addNeutral: PropTypes.func.isRequired,
-//   addBad: PropTypes.func.isRequired,
-// };
+FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string.isRequired),
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
