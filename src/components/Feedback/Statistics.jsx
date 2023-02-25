@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import { ListItem } from './Feedback.styled';
 export default function Statistics({
   good,
   neutral,
@@ -9,21 +9,21 @@ export default function Statistics({
 }) {
   return (
     <ul>
-      <li>
+      <ListItem>
         <p>Good: {good}</p>
-      </li>
-      <li>
+      </ListItem>
+      <ListItem>
         <p>Neutral: {neutral}</p>
-      </li>
-      <li>
+      </ListItem>
+      <ListItem>
         <p>Bad: {bad}</p>
-      </li>
-      <li>
+      </ListItem>
+      <ListItem>
         <p>Total: {totalFeedback}</p>
-      </li>
-      <li>
+      </ListItem>
+      <ListItem>
         <p>Positive feedback: {positivePercentage}%</p>
-      </li>
+      </ListItem>
     </ul>
   );
 }
