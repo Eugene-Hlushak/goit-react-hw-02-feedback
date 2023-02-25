@@ -3,6 +3,7 @@ import FeedbackOptions from './Feedback/FeedbackOptions';
 import Section from './Feedback/Section';
 import Notification from './Feedback/Notification';
 import Statistics from './Feedback/Statistics';
+import { GlobalStyle } from './GlobalStyle';
 
 export class App extends Component {
   state = {
@@ -62,6 +63,7 @@ export class App extends Component {
             <Notification message="There is no feedback" />
           )}
         </Section>
+        <GlobalStyle />
       </>
     );
   }
